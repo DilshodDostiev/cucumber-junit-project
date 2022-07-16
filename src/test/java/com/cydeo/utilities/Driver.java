@@ -44,10 +44,7 @@ public class Driver {
                     WebDriverManager.firefoxdriver().setup();
                     driverPool.set(new FirefoxDriver());
                     driverPool.get().manage().window().maximize();
-                    driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-
-
+                    driverPool.get().manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
                     break;
             }
 
